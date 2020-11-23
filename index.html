@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <title>Serokell</title>
+    </head>
+    <body>
+        <div class="navbar fixed-top">
+            <div class="navbar__link navbar__link-brand">
+                <a class="navbar-brand">Serokell</a>
+            </div>
+            <div class="navbar__link navbar__link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav
+                role="navigation"
+                id="navigation-primary"
+                class="navigatio-primary navbar__items navbar__items--right"
+            >
+                <div  class="navbar__link">
+                    <a class="nav-link navigation__navlinks" href="/">Link 1</a>
+                </div>
+                <div class="navbar__link">
+                    <a  class="nav-link navigation__navlinks" href="/">Link 2</a>
+                </div>
+                <div class="navbar__link">
+                    <a  class="nav-link navigation__navlinks" href="/">Link 3</a>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section class="hero">
+                <div class="hero__image" style="background-image: url(./assets/hero.jpg)">
+                    <div class="hero__content">
+                        <h1 class="hero__content-text">Project Title</h1>
+                        <a class="hero__button" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+            <section class="subtitle">
+                <h1 class="subtitle__text">Subtitle</h1>
+                <div class="subtitle__content">
+                    <div class="subtitle__content--image col">
+                         <img width="460" height="300" src="./assets/front1.jpeg"/>
+                    </div>
+                    <div class="subtitle__content--text col">
+                        <p>
+                            Lorem ipsum odor amet, consectetuer adipiscing elit.<br>
+                            Ac purus in massa egestas mollis varius;dignissim elementum.<br>
+                            Mollis tincidunt mattis hendrerit dolor eros enim,<br>
+                            nisi ligula ornare.Hendrerit parturient
+                        </p>
+                    </div>
+                </div>
+                <div class="subtitle__content">
+                    <div class="subtitle__content--text col">
+                        <p>
+                            Lorem ipsum odor amet, consectetuer adipiscing elit.<br>
+                            Ac purus in massa egestas mollis varius;dignissim elementum.<br>
+                            Mollis tincidunt mattis hendrerit dolor eros enim,<br>
+                            nisi ligula ornare.Hendrerit parturient
+                        </p>
+                    </div>
+                    <div class="subtitle__content--image col">
+                        <img  width="260" height="345" src="./assets/front1.jpeg"/>
+                    </div>
+                </div>
+            </section>
+            <section class="hero" id="contact">
+                <div class="hero__image" style="background-image: url(./assets/front3.jpeg);">
+                    <div class="form__container">
+                        <h1 class="form__heading">Contact Form</h1>
+                        <form class="form__content" id="form">
+                            <div class="field">
+                                <label class="label" htmlFor="name">
+                                    Your name
+                                </label>
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        required={true}
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" htmlFor="email">
+                                    Email
+                                </label>
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        required={true}
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" htmlFor="message">
+                                    Message
+                                </label>
+                                <div className="control">
+                                    <textarea
+                                        class="textarea"
+                                        name="message"
+                                        id="message"
+                                        required={true}
+                                    >
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="field form__container--button">
+                                <button class="form__button" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="content">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-4 social">
+                            <div>
+					            <i class="fa fa-map-marker-alt"></i>
+					            <p>address</p>
+				            </div>
+                            <div>
+					            <i class="fa fa-phone-alt"></i>
+					            <p>phone</p>
+                            </div>
+                            <div>
+					            <i class="far fa-envelope"></i>
+					            <p>email</p>
+				            </div>
+                        </div>
+                        <div className="column is-4">
+                            <section class="menu">
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="/" class="menu__item">
+                                            Link 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__item" href="/">
+                                            Link 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__item" href="/">
+                                            Link 3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__item" href="/">
+                                            Link 4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__item" href="/">
+                                            Link 5
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__item" href="/">
+                                            Link 6
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <hr class="footer__line">
+                    <div class="footer__copyright">
+                        &copy; Copyright
+                    </div>
+                </div>
+            </div>
+      </footer>
+      <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
